@@ -1,6 +1,7 @@
 import React from 'react';
 import groupImage from '../../assets/group.png';
 import bannerImage from '../../assets/banner.png';
+import playImage from '../../assets/play.png';
 
 const Banner = () => {
   return (
@@ -29,10 +30,8 @@ const Banner = () => {
             </button>
              <button className="flex items-center gap-2 px-4 py-3 rounded-full font-bold border-2 border-violet-400 
              bg-linear-to-r from-[#5e19d4] to-[#8a49c8] bg-clip-text text-transparent  active:scale-95 text-md transition-all duration-200 hover:-translate-y-0.5">
-              <span className="w-5 h-5  rounded-full border border-gray-300 flex items-center justify-center">
-                <svg className="w-2.5 h-2.5   text-gray-600 ml-px" viewBox="0 0 10 12" fill="currentColor">
-                  <path d="M1 1l8 5-8 5V1z" />
-                </svg>
+              <span className="flex items-center justify-center">
+                <img src={playImage} alt="Play" />
               </span>
               Watch Demo
             </button>

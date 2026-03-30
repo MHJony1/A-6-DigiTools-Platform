@@ -10,7 +10,7 @@ const Steps = () => {
       <h2 className='text-3xl md:text-4xl font-extrabold '>Get Started in 3 Steps</h2>
       <p className='text-gray-400 text-sm md:text-md'>Start using premium digital tools in minutes, not hours.</p>
       </div>
-
+      {/* steps card layout container */}
      <div>
        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-4 md:gap-1 justify-items-center  container mx-auto max-w-300'>
        <div className='shadow-sm w-90 h-90 rounded-2xl relative  bg-white'>
