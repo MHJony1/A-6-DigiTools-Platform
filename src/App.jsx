@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import CTA from './Components/CTA/CTA'
@@ -25,13 +26,14 @@ const productsData = productsPromise();
 
 
 function App() {
+  const [cart, setCart] = useState([]);
   return (
     <>
-      <Navbar />
+      <Navbar cartCount={cart.length} />
       <Banner />
       <Stats />
 
-      <Products productsData={productsData} />
+      <Products productsData={productsData} cart={cart} setCart={setCart} />
 
 
       <Steps />

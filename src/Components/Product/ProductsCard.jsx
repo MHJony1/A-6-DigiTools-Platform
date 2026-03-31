@@ -1,5 +1,6 @@
 import { Check } from 'lucide-react';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const ProductsCard = ({card, cart, setCart}) => {
   const {name, image, description, price, period, tag, tagType, features} = card;
@@ -8,6 +9,7 @@ const ProductsCard = ({card, cart, setCart}) => {
   const addToCart = () => {
     setCart([...cart, card]);
     setIsAddedToCart(true);
+    toast.success('Add to Cart Successfully');
   };
 
     const getTagStyles = (type) => {

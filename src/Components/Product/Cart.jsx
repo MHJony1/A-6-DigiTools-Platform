@@ -1,5 +1,6 @@
 import React from 'react';
 import cartImage from '../../assets/trolley.png';
+import { toast } from 'react-toastify';
 
 const cart = ({cart, setCart}) => {
 
@@ -8,10 +9,12 @@ const cart = ({cart, setCart}) => {
   const handleRemove = (id) => {
     const updatedCart = cart.filter((item) => item.id !== id);
     setCart(updatedCart);
+    toast.info('Remove from Cart Successfully');
   };
 
-  const handleClearCart = () => {
+  const handleProceedToCart = () => {
     setCart([]); 
+    toast.success('Proceed to Cart Successfully');
   };
 
   return (
@@ -56,7 +59,7 @@ const cart = ({cart, setCart}) => {
           <p className='text-2xl font-bold'>${totalPrice}</p>
         </div>
 
-        <div onClick={handleClearCart} className='text-lg font-bold w-full max-w-280 mx-auto rounded-full bg-linear-to-r from-[#631edb] to-[#7b3fb2] text-white text-center py-3 mb-7 cursor-pointer'>
+        <div onClick={handleProceedToCart} className='text-lg font-bold w-full max-w-280 mx-auto rounded-full bg-linear-to-r from-[#631edb] to-[#7b3fb2] text-white text-center py-3 mb-7 cursor-pointer'>
           <button>Proceed To Checkout</button>
         </div>
         </>  

@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
-const Navbar = () => {
+const Navbar = ({cartCount}) => {
   return (
     <div className='bg-base-100 sticky top-0 z-50 shadow-sm '>
      <div className="navbar  md:max-w-325 mx-auto px-4 md:px-10">
@@ -34,7 +34,17 @@ const Navbar = () => {
   </div>
   <div className="navbar-end flex ml-4 space-x-3">
     <div className=' flex justify-between items-center space-x-3'>
-      <AiOutlineShoppingCart />
+
+      <div className="relative cursor-pointer group">
+            <AiOutlineShoppingCart className="text-2xl text-slate-700 group-hover:text-[#7336de] transition-all" />
+            
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold h-5 w-5 flex items-center justify-center rounded-full border-2 border-white shadow-sm animate-in zoom-in duration-300">
+                {cartCount}
+              </span>
+            )}
+        </div>
+
      <h3 className="text-lg font-semibold hidden sm:block">Login</h3>
     </div>
     <a className="btn bg-linear-to-r from-[#4e18ad] to-[#8a49c8] rounded-full text-white">Get Started</a>

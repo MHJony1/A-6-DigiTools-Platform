@@ -2,10 +2,10 @@ import React, { use, useState } from 'react';
 import ProductsCard from './ProductsCard';
 import Cart from './Cart';
 
-const Products = ({productsData}) => {
+const Products = ({productsData, cart, setCart}) => {
   const product = use(productsData);
   const [active, setActive] = useState('products');
-  const [cart, setCart] = useState([]);
+  // const [cart, setCart] = useState([]);
 
   return (
     <div className='mt-20 mb-20'>
