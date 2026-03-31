@@ -5,7 +5,7 @@ import { Check } from 'lucide-react';
 const PricingCard = ({card}) => {
   const { plan, tagline, price, currency, billing_cycle, features, button_text, is_popular } = card;
   
-  console.log(card);
+  // console.log(card);
   return (
     <div className={`relative p-8 mx-auto w-full max-w-95 mt-10 mb-22 rounded-3xl flex flex-col justify-between h-auto border transition-all duration-300 ${
       is_popular 

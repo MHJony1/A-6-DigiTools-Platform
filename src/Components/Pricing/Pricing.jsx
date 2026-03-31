@@ -3,7 +3,7 @@ import PricingCard from './PricingCard';
 
 const Pricing = ({ pricingData }) => {
   const pricing = use(pricingData);
-  console.log(pricing);
+  // console.log(pricing);
 
   return (
     <div>

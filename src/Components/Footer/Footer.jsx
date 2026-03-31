@@ -10,7 +10,7 @@ const Footer = () => {
    
           {/* Brand Column  */}
           <div className="lg:col-span-2">
-            <h2 className="text-white text-3xl font-bold mb-4">DigiTools</h2>
+            <h2 className="bg-linear-to-r from-[#631edb] to-[#7b3fb2] bg-clip-text text-transparent text-3xl font-bold mb-4">DigiTools</h2>
             <p className="max-w-xs leading-relaxed">
               Premium digital tools for creators, professionals, and businesses. 
               Work smarter with our suite of powerful tools.
