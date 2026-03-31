@@ -33,7 +33,7 @@ const cart = ({cart, setCart}) => {
         <div className=''>
           {
             cart.map((item) =>(
-              <div className="flex items-center max-w-280 mx-auto mb-5 bg-gray-100 shadow-sm  justify-between border border-gray-50 rounded-xl p-4"
+              <div className="flex items-center max-w-290 mx-auto mb-5 bg-gray-100 shadow-sm  justify-between border border-gray-50 hover:border-red-400 rounded-xl p-4"
                 key={item.id}>
 
                 <div className='flex items-center gap-4'>
@@ -54,12 +54,12 @@ const cart = ({cart, setCart}) => {
             ))}
         </div>
 
-        <div className='max-w-280 mx-auto flex justify-between items-center mb-4'>
+        <div className='max-w-290 mx-auto flex justify-between items-center mb-4'>
           <h3 className='text-xl font-bold'>Total</h3>
           <p className='text-2xl font-bold'>${totalPrice}</p>
         </div>
 
-        <div onClick={handleProceedToCart} className='text-lg font-bold w-full max-w-280 mx-auto rounded-full bg-linear-to-r from-[#631edb] to-[#7b3fb2] text-white text-center py-3 mb-7 cursor-pointer'>
+        <div onClick={handleProceedToCart} className='text-lg font-bold w-full max-w-290 mx-auto rounded-full bg-linear-to-r from-[#631edb] to-[#7b3fb2] hover:scale-102 text-white text-center py-3 mb-7 cursor-pointer'>
           <button>Proceed To Checkout</button>
         </div>
         </>  

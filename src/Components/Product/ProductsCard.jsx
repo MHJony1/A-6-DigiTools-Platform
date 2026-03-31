@@ -24,7 +24,7 @@ const ProductsCard = ({card, cart, setCart}) => {
   
 
   return (
-   <div className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:scale-105">
+   <div className="bg-white p-6 rounded-3xl border border-slate-100 hover:border-blue-400 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:scale-105">
       
       <div>
         {/* Top Header: Image and Tag */}

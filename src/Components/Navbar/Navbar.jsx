@@ -32,8 +32,8 @@ const Navbar = ({cartCount}) => {
       <li className='text-md font-semibold'><a href="">FAQ</a></li>
     </ul>
   </div>
-  <div className="navbar-end flex ml-4 space-x-3">
-    <div className=' flex justify-between items-center space-x-3'>
+  <div className="navbar-end flex flex-col md:flex-row gap-2 ml-4 space-x-3">
+    <div className=' flex  justify-between items-center space-x-3'>
 
       <div className="relative cursor-pointer group">
             <AiOutlineShoppingCart className="text-2xl text-slate-700 group-hover:text-[#7336de] transition-all" />
@@ -45,7 +45,7 @@ const Navbar = ({cartCount}) => {
             )}
         </div>
 
-     <h3 className="text-lg font-semibold hidden sm:block">Login</h3>
+     <h3 className="text-lg font-semibold">Login</h3>
     </div>
     <a className="btn bg-linear-to-r from-[#4e18ad] to-[#8a49c8] rounded-full text-white">Get Started</a>
   </div>
