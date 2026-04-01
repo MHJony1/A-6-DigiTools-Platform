@@ -1,16 +1,27 @@
-# React + Vite
+# 🚀Project Name
+DigiTools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Description
+DigiTools is a modern, high-performance web application designed to showcase and manage premium digital assets. This project focuses on a clean user experience, featuring a dynamic marketplace layout and responsive pricing structures.
 
-Currently, two official plugins are available:
+# 🛠️Technology used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+    1. Core: React.js (Vite)
+    2. Styling: Tailwind CSS & DaisyUI
+    3. Logic: JavaScript (ES6+)
+    4. Notifications: React-Toastify
+    5. React Icons & Lucide Icons
+    6. Data: JSON (Local API simulation)
 
-## React Compiler
+# ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+    1. Seamless Cart Logic-> An intuitive "Add to Cart" system engineered with smart validation. It intelligently detects duplicate items and prevents redundant entries, ensuring a clean and consistent state.
 
-## Expanding the ESLint configuration
+    2. Dynamic Content Rendering-> The application utilizes the Fetch API for asynchronous data management. Products are dynamically mapped from a local JSON source, demonstrating a scalable, data-driven approach to UI development.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    3. Contextual User Feedback-> Enhanced with React-Toastify to bridge the gap between user action and system response. High-precision alerts provide instant feedback for successful additions or error handling, creating a polished UX.
+
+# 📸 UI Highlights
+
+Beautiful gradient-based UI, fully responsive (Mobile + Desktop), smooth hover effects, and interactions.
+
